@@ -18,6 +18,8 @@ import "../styles/App.css";
 const App = ({ Component, pageProps }) => {
   // Pode ser definido como 'devnet', 'testnet' ou 'mainnet-beta'
   const network = WalletAdapterNetwork.Devnet;
+  // const network = WalletAdapterNetwork.Mainnet; rede real
+
 
   // Você também pode fornecer um ponto de extremidade RPC personalizado
   const endpoint = useMemo(() => clusterApiUrl(network), [network]);
